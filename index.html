@@ -30,14 +30,20 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li><a ng-href="home">Dashboard</a></li>
+          <li><a ng-href="#">Dashboard</a></li>
         </ul>
         <h3 class="text-muted">Train Simulation</h3>
       </div>
 
-      <div ng-view></div>
+      <div ng-controller="MainCtrl">
+      <div id="mapDiv" > </div>
+      <input type="checkbox" ng-model="dynamicSpeed" ng-change="changeConstantSpeed()"> <b>Add Reverse Direction Train and Dynamic Speed (Opntional Requirement): {{dynamicSpeed}}</b>
+      <br> 
+      <p>Current Time Speed: <b>{{forwardSpeedX || "Normal Time Speed"}}</b></p> 
+      <ngslider value = "forwardSpeedX"></ngslider> 
 
-    </div>
+
+      </div>
 
 
     <script src="scripts/app.js"></script>

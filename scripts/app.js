@@ -137,9 +137,9 @@ window.app = angular
   })
   .config(function($routeProvider, $locationProvider){
 
-        $routeProvider
-            .when('/', {templateUrl: 'views/main.html',controller: 'MainCtrl'})
-            .otherwise({ redirectTo: '/'});
+        // $routeProvider
+        //     .when('/', {templateUrl: 'views/main.html',controller: 'MainCtrl'})
+        //     .otherwise({ redirectTo: '/'});
 
             // remove the # from the url
         $locationProvider.html5Mode({
