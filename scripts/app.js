@@ -19,7 +19,7 @@ window.app = angular
 
      // Bakerloo Line map loader
      this.Bakerloo_Line = function(callback){
-          d3.xml("/images/Bakerloo_Line.svg").mimeType("image/svg+xml").get(function(error, svg) {
+          d3.xml("images/Bakerloo_Line.svg").mimeType("image/svg+xml").get(function(error, svg) {
              $("#mapDiv").append(svg.documentElement);
              var svgDom = d3.select('svg');
               callback(svgDom);
