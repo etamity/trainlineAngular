@@ -1,0 +1,6 @@
+
+<div id="mapDiv"> </div>
+<input type="checkbox" ng-model="dynamicSpeed" ng-change="changeConstantSpeed()"> <b>Add Reverse Direction Train and Dynamic Speed (Opntional Requirement): {{dynamicSpeed}}</b>
+<br> 
+<p>Current Time Speed: <b>{{forwardSpeedX || "Normal Time Speed"}}</b></p> 
+<ngslider value = "forwardSpeedX"></ngslider> 
